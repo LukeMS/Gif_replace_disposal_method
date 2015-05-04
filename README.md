@@ -1,12 +1,11 @@
-==============================================================================  
-** Gif_replace_disposal_method
->>> Created by: Lucas de Morais Siqueira (2015/05/04)
->>> Contact: lucas.morais.siqueira@gmail.com
--------------------------------------------------------------------------------
+** Gif_replace_disposal_method  
+Created by: Lucas de Morais Siqueira (2015/05/04)  
+Contact: lucas.morais.siqueira@gmail.com  
+
 Changes the disposal method to "Replace" (as in Gimp's frame disposal "One
 frame per layer (replace)") by  replacing the value of the current Disposal
-Method field (in the Graphic Control Extension of the binary gif file).
-==============================================================================
+Method field (in the Graphic Control Extension of the binary gif file).  
+
 Why would you do that?
 Sometimes when you make an animated gif with a transparent background (in my
 case via scripts using Rmagick  / ImageMagick), the disposal becomes weird
@@ -18,4 +17,4 @@ bunch of methods that creates the same buggy animated gif with ghots.
 Gimp, however, offers you the Replace method, so after changing it a single
 file at a time, I've decided to compare the files binary/hex data, found
 the value of the proper method and created this script to do it for me.
-==============================================================================
+
